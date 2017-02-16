@@ -7,9 +7,9 @@ vagrant_synced_folder_default_type: nfs
 
 # If you need to run multiple instances of Drupal VM, set a unique hostname,
 # machine name, and IP address for each instance.
-vagrant_hostname: dev.sva-ag.ch
-vagrant_machine_name: sva-ag
-vagrant_ip: 192.168.100.53
+vagrant_hostname: dev.test.ch
+vagrant_machine_name: test
+vagrant_ip: 192.168.101.19
 
 # Allow Drupal VM to be accessed via a public network interface on your host.
 # Vagrant boxes are insecure by default, so be careful. You've been warned!
@@ -71,7 +71,7 @@ drupal_composer_project_options: "--prefer-dist --stability dev --no-interaction
 install_site: false
 
 # Required Drupal settings.
-drupal_core_path: "{{ drupal_composer_install_dir }}/docroot"
+drupal_core_path: "{{ drupal_composer_install_dir }}/web"
 drupal_db_user: drupal
 drupal_db_password: drupal
 drupal_db_name: drupal
@@ -203,11 +203,11 @@ installed_extras:
   # - memcached
   # - newrelic
   # - nodejs
-  - pimpmylog
-  - redis
+  # - pimpmylog
+  # - redis
   # - ruby
   # - selenium
-  - solr
+  # - solr
   # - varnish
   - xdebug
   - xhprof
