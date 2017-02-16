@@ -1,4 +1,5 @@
 <?php
+
 namespace Drupal\Tests\one_two\Functional;
 
 use Drupal\Tests\BrowserTestBase;
